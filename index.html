@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BetaZero</title>
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div style="text-align: center;">
+		<h2>BetaZero IA Chess</h2>
+		<h4>jeff.sbxdigital.com.br</h4>
+	</div>
+	<div id="board" class="board"></div>
+	<br>
+	<div class="info">
+	    Profundidade da Pesquisa
+	    <select id="search-depth">
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3" selected>3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+	        <option value="6">6(Não Usar)</option>
+	    </select>
+
+	    <br>
+	    <span>Posições Válidas: <span id="position-count"></span></span>
+	    <br>
+	    <span>Tempo Gasto na Pesquisa: <span id="time"></span></span>
+	    <br>
+	    <span>Posições por Segunto: <span id="positions-per-s"></span></span>
+	    <br>
+	    <span>Jogadas Feitas: </span>
+	    <br>
+	    <br>
+	    <div id="move-history" class="move-history">
+	    </div>
+	</div>
+	<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="lib/chessboardjs/js/chess.js"></script>
+	<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
